@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">TIG055</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="hint">Type here</string>
+    <string name="button_text">Button</string>
 
 </resources>
