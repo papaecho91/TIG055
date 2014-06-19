@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.os.Build;
 
 public class MainActivity extends ActionBarActivity {
@@ -18,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
 	public final static String EXTRA_MESSAGE = "com.example.tig055";
 	
 	public void sendMessage(View view){
+		
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
 		EditText editText = (EditText) findViewById(R.id.edit_message);
 		String message = editText.getText().toString();
@@ -25,6 +27,7 @@ public class MainActivity extends ActionBarActivity {
 		startActivity(intent);
 		
 	}
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
