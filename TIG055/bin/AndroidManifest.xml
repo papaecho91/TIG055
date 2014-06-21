@@ -30,6 +30,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.tig055.MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.tig055.DisplayText"
+            android:label="@string/title_activity_display_text"
+            android:parentActivityName="com.example.tig055.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tig055.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
