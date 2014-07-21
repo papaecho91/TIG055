@@ -1,5 +1,8 @@
 package com.example.tig055;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -18,14 +21,23 @@ public class MainActivity extends ActionBarActivity {
 	
 	public final static String EXTRA_MESSAGE = "com.example.tig055";
 	
-	public void sendMessage(View view){
+	public void sendMessage(View view) throws MalformedURLException, IOException{
 		
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
 		EditText editText = (EditText) findViewById(R.id.edit_message);
 		String message = editText.getText().toString();
 		intent.putExtra(EXTRA_MESSAGE, message);
 		startActivity(intent);
+		ParkingService ps = new ParkingService();
+		ps.ParkingData();
 		
+	}
+	public void openDisplayText(View v){
+		Intent displayText = new Intent(this,DisplayText.class);
+		EditText editText = (EditText) findViewById(R.id.edit_message);
+		String message_dt = editText.getText().toString();
+		displayText.putExtra(EXTRA_MESSAGE, message_dt);
+		startActivity(displayText);
 	}
 
     @Override

@@ -3,16 +3,34 @@ package com.example.tig055;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.os.Build;
 
 public class DisplayText extends ActionBarActivity {
 
+	public void showText(View v){
+		Intent intent = getIntent();
+		String intent_message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+		
+		TextView textView_st2 = (TextView) findViewById(R.id.textView_showText);
+		TextView textView_st = (TextView) findViewById(R.id.textView_showText);
+		
+
+		EditText editText_showText = (EditText) findViewById(R.id.input_showText);
+		String input_showText = editText_showText.getText().toString();
+
+		textView_st2.setText(intent_message);
+		textView_st.setText(input_showText);
+		
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

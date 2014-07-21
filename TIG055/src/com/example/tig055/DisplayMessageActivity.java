@@ -23,6 +23,8 @@ public class DisplayMessageActivity extends ActionBarActivity {
 		Intent intent = getIntent();
 		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 		
+		ParkingService parkingservice = new ParkingService();
+
 		TextView textView = new TextView(this);
 		textView.setText(message);
 		
@@ -34,6 +36,7 @@ public class DisplayMessageActivity extends ActionBarActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}*/
 	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

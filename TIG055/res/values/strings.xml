@@ -5,9 +5,12 @@
     <string name="action_settings">Settings</string>
     <string name="hint">Type here</string>
     <string name="button_text">Button</string>
+    <string name="button_text2">Display text</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
-    
     <string name="title_activity_display_text">DisplayText</string>
-	<string name="button_text1">Show Text</string>
-	<string name="hint2">Type here</string>
+    <string name="button_text1">Show Text</string>
+    <string name="hint2">Type here</string>
+    <string name="title_activity_test">Test</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>

@@ -13,6 +13,11 @@
         android:layout_height="wrap_content"
     	android:text="@string/button_text"
     	android:onClick="sendMessage" />
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text2"
+        android:onClick="openDisplayText"/>
     
     
     
